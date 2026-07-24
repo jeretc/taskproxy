@@ -49,6 +49,8 @@ The single source of truth. Every handshake, simulation, and payment is recorded
 
 ## How It Works
 
+*Target architecture — not yet live end to end. MCP Node currently ships a request-logging and node-health-monitoring layer (see caveat above); it does not yet chain real calls through the other three nodes as shown below.*
+
 ```
 Agent Intent
      │
@@ -78,6 +80,8 @@ Agent Intent
 ---
 
 ## Operational Scenarios
+
+*The two scenarios below illustrate the intended use cases for the completed system. They are walkthroughs of the target design, not descriptions of current live behavior.*
 
 ### Scenario A — Secure Genetic "Search-and-Replace" (Business)
 Think of TaskProxy as a professional Agency. You tell the Agency what you want **(MCP)**, they go to their specialized lab to do the work **(Prime Editor)**, they pay their own expenses **(Autonomous Pay)**, and they give you a certified, unchangeable receipt of every step they took **(M2M Ledger)**.
