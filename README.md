@@ -34,6 +34,8 @@ Part of the **2026 Sovereign AI Stack**.
 ### 🔌 [MCP Node](https://mcp-node.com) — Contextual Gateway
 The secure handshake layer. Utilizing the **Model Context Protocol (MCP)**, this node translates agent intent into secure, least-privilege requests. Instead of raw database access, agents receive curated, pre-vetted REST endpoints — critical for protecting sensitive genomic sequences and enterprise data environments.
 
+> *Current build status: a request-logging and node-health-check layer is live, tracking calls and uptime across the stack. Full MCP protocol implementation is the next build phase for an acquirer to complete.*
+
 ### 🧬 [Prime Editor](https://prime-editor.com) — Biologic Compute Node
 An AI-native computational environment for **programmable genomic sequence modeling**. Designed for precision mutation simulation, Prime Editor allows autonomous agents to model Search-and-Replace edits on digital DNA — predicting efficiency and safety before any physical lab commitment.
 
@@ -126,7 +128,7 @@ The TaskProxy stack includes 5 premium domains available as a complete acquisiti
 
 ## Strategic Acquisition
 
-The TaskProxy Infrastructure Stack — including all 5 domains, the whitepaper, and the complete business logic — is **available for strategic acquisition**.
+The TaskProxy Infrastructure Stack — including all 5 domains, the whitepaper, and the complete business logic — is **available for strategic acquisition for $150,000**.
 
 This is an ideal acquisition for companies building:
 - Agentic AI platforms
