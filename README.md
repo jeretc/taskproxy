@@ -1,156 +1,111 @@
-# TaskProxy - Sovereign AI Orchestration Stack
+# TaskProxy Infrastructure Stack
 
-> **Closing the AI Execution Gap.**  
-> The missing infrastructure layer between LLM reasoning and real-world autonomous execution.
+A five-domain AI infrastructure concept portfolio, offered as a single acquisition package.
 
-🌐 **[taskproxy.ai](https://taskproxy.ai)** - Available for strategic acquisition.
+- Live demonstration: [taskproxy.ai](https://taskproxy.ai)
+- Technical whitepaper: [taskproxy.ai/whitepaper.html](https://taskproxy.ai/whitepaper.html)
+- Acquisition inquiries: [contact@taskproxy.ai](mailto:contact@taskproxy.ai)
+- License: see [LICENSE](LICENSE)
 
----
+## Current status
 
-## The Problem: The AI Execution Gap
+TaskProxy is a pre-revenue concept portfolio. It is not a production platform.
 
-Large Language Models can reason about complex data. But they cannot safely *act* on it.
+| Area | Status |
+|---|---|
+| Five live concept sites | Built and publicly accessible |
+| MCP Node gateway | Demo layer implemented: request logging, node health checks and API key management. Full Model Context Protocol support is not yet built. |
+| Genomic compute, payments, ledger | Browser-based simulations that illustrate the intended behavior |
+| End-to-end workflow | Target architecture only. The nodes are not yet chained together. |
 
-There is no secure, accountable, fiscally-aware infrastructure layer that allows autonomous AI agents to:
+## The problem
+
+Language models can reason about complex data, but few systems let autonomous agents act on it safely. A complete execution layer would need to let agents:
+
 - Access sensitive data without over-exposure
-- Execute high-compute tasks like genomic simulations
-- Pay for their own compute resources in real-time
-- Produce immutable, regulatory-grade audit records
+- Run high-compute tasks such as genomic simulations
+- Pay for compute in real time
+- Produce verifiable audit records
 
-This is **The Execution Gap** and TaskProxy closes it.
+TaskProxy frames this as the AI execution gap and proposes a four-node architecture to address it.
 
----
+## Portfolio
 
-## What is TaskProxy?
-
-**TaskProxy** is a sovereign orchestration hub for autonomous agentic workflows. It functions as a secure abstraction layer that routes high-compute tasks to specialized nodes, settles costs via machine-to-machine payment rails, and verifies every action through immutable audit consensus.
-
-Part of the **2026 Sovereign AI Stack**.
-
----
-
-## The 4-Node Ecosystem
-
-### 🔌 [MCP Node](https://mcp-node.com) - Contextual Gateway
-The secure handshake layer. Utilizing the **Model Context Protocol (MCP)**, this node translates agent intent into secure, least-privilege requests. Instead of raw database access, agents receive curated, pre-vetted REST endpoints — critical for protecting sensitive genomic sequences and enterprise data environments.
-
-> *Current build status: a request-logging and node-health-check layer is live, tracking calls and uptime across the stack. Full MCP protocol implementation is the next build phase for an acquirer to complete.*
-
-### 🧬 [Prime Editor](https://prime-editor.com) - Biologic Compute Node
-An AI-native computational environment for **programmable genomic sequence modeling**. Designed for precision mutation simulation, Prime Editor allows autonomous agents to model Search-and-Replace edits on digital DNA — predicting efficiency and safety before any physical lab commitment.
-
-### 💳 [Autonomous Pay](https://autonomous-pay.com) - Fiscal Rail
-Real-time fiscal authorization for the machine economy. Autonomous Pay allows the stack to pay for its own high-compute resources — API calls, GPU time, server spin-up — in real-time, removing human bottlenecks from the autonomous research cycle.
-
-### 📒 [M2M Ledger](https://m2m-ledger.com) - Audit Consensus Layer
-The single source of truth. Every handshake, simulation, and payment is recorded as an immutable event. M2M Ledger provides the audit consensus required for regulatory compliance (FDA/MyIPO) and resolves disputes between autonomous agents with cryptographic certainty.
-
----
-
-## How It Works
-
-*Target architecture — not yet live end to end. MCP Node currently ships a request-logging and node-health-monitoring layer (see caveat above); it does not yet chain real calls through the other three nodes as shown below.*
-
-```
-Agent Intent
-     │
-     ▼
-┌─────────────┐     Least-privilege      ┌──────────────┐
-│   MCP Node  │ ───── data access ──────▶│ Prime Editor │
-│  (Gateway)  │                          │  (Compute)   │
-└─────────────┘                          └──────┬───────┘
-                                                │
-                                    Simulation complete
-                                                │
-                                                ▼
-                                    ┌───────────────────┐
-                                    │  Autonomous Pay   │
-                                    │  (Settle Costs)   │
-                                    └─────────┬─────────┘
-                                              │
-                                   M2M transaction settled
-                                              │
-                                              ▼
-                                    ┌───────────────────┐
-                                    │    M2M Ledger     │
-                                    │  (Immutable Audit)│
-                                    └───────────────────┘
-```
-
----
-
-## Operational Scenarios
-
-*The two scenarios below illustrate the intended use cases for the completed system. They are walkthroughs of the target design, not descriptions of current live behavior.*
-
-### Scenario A - Secure Genetic "Search-and-Replace" (Business)
-Think of TaskProxy as a professional Agency. You tell the Agency what you want **(MCP)**, they go to their specialized lab to do the work **(Prime Editor)**, they pay their own expenses **(Autonomous Pay)**, and they give you a certified, unchangeable receipt of every step they took **(M2M Ledger)**.
-
-### Scenario B - Automated Infrastructure Compliance (Technical)
-1. **Handshake** - MCP Node generates a JIT (Just-in-Time) credential for a specific server directory
-2. **Execution** - Prime Editor sandbox validates the patch against a Shadow Clone of the production environment
-3. **Settlement** - Autonomous Pay triggers an M2M transaction for the ephemeral server time used
-4. **Audit** - M2M Ledger commits the Git-diff and transaction ID to a permanent immutable record
-
----
-
-## Domain Portfolio
-
-The TaskProxy stack includes 5 premium domains available as a complete acquisition package:
-
-| Domain | Node | Role |
+| Domain | Role | Current implementation |
 |---|---|---|
-| [taskproxy.ai](https://taskproxy.ai) | Central Hub | Sovereign orchestration layer |
-| [mcp-node.com](https://mcp-node.com) | MCP Node | Contextual gateway |
-| [prime-editor.com](https://prime-editor.com) | Prime Editor | Biologic compute |
-| [autonomous-pay.com](https://autonomous-pay.com) | Autonomous Pay | Fiscal rail |
-| [m2m-ledger.com](https://m2m-ledger.com) | M2M Ledger | Audit consensus |
+| [taskproxy.ai](https://taskproxy.ai) | Central hub: orchestration narrative and acquisition page | Concept site and whitepaper |
+| [mcp-node.com](https://mcp-node.com) | Contextual gateway using the Model Context Protocol | Demo gateway with call logging, node health monitoring and a dashboard |
+| [prime-editor.com](https://prime-editor.com) | Biologic compute node for genomic sequence modeling | Interactive visual simulation |
+| [autonomous-pay.com](https://autonomous-pay.com) | Fiscal rail for machine-to-machine settlement | Simulated payment activity |
+| [m2m-ledger.com](https://m2m-ledger.com) | Audit consensus layer | Simulated ledger activity |
 
----
+## Architecture
 
-## Target Verticals
+The diagram shows the target architecture. It is not yet live end to end. Today, MCP Node sends status requests to the other nodes and records the results.
 
-- **AI Infrastructure** - Agentic orchestration, MCP protocol, sovereign AI stacks
-- **Genomics & Biotech** - AI-native DNA simulation, precision medicine, computational biology
-- **Fintech & Payments** - Machine-to-machine settlements, autonomous fiscal rails, M2M economy
+```mermaid
+flowchart TD
+    A[Agent intent] --> B[MCP Node<br/>Gateway]
+    B -->|Least-privilege data access| C[Prime Editor<br/>Compute]
+    C -->|Simulation complete| D[Autonomous Pay<br/>Settle costs]
+    D -->|Transaction settled| E[M2M Ledger<br/>Immutable audit record]
+```
 
----
+### Node responsibilities
 
-## Technical Glossary
+- **MCP Node:** Translates agent intent into scoped, least-privilege requests so that agents use curated endpoints rather than raw data access.
+- **Prime Editor:** An environment for modeling search-and-replace edits on digital DNA before any physical lab commitment.
+- **Autonomous Pay:** Real-time fiscal authorization so the stack can pay for compute such as API calls, GPU time and server spin-up.
+- **M2M Ledger:** An event record intended to give every handshake, simulation and payment a verifiable audit trail.
+
+## Illustrative scenarios
+
+These walkthroughs describe the intended design. They are not descriptions of current live behavior.
+
+**Scenario A: genetic search-and-replace (business view).** An organization states what it wants through MCP Node. Prime Editor performs the modeling. Autonomous Pay covers the compute cost. M2M Ledger issues a record of every step.
+
+**Scenario B: infrastructure compliance (technical view).**
+
+1. MCP Node generates a just-in-time credential for a specific server directory.
+2. The Prime Editor sandbox validates a patch against a shadow clone of the production environment.
+3. Autonomous Pay settles the cost of the ephemeral server time.
+4. M2M Ledger records the diff and transaction ID.
+
+## Acquisition scope
+
+The complete package is offered for **USD 150,000** and covers:
+
+- All five domains
+- The site source files and designs
+- The demo gateway source (PHP) and database setup
+- The technical whitepaper and concept documentation
+
+The exact handover inventory is confirmed during the acquisition. This public repository contains documentation only. Application source is supplied separately as part of the agreed scope.
+
+## Development opportunities
+
+An acquirer would own a defined architecture and a working demonstration, and could build on it by:
+
+- Implementing the full Model Context Protocol in MCP Node
+- Replacing the simulated nodes with real compute, payment and ledger integrations
+- Chaining the nodes into a single end-to-end workflow
+
+Target sectors for a completed system include agentic AI infrastructure, computational biology, machine-to-machine payments and enterprise AI audit tooling.
+
+## Glossary
 
 | Term | Definition |
 |---|---|
-| **Execution Gap** | The inability for AI agents to perform high-stakes tasks due to lack of secure or fiscal rails |
-| **Sovereign Stack** | An infrastructure where the AI is an independent, accountable entity with its own contained resources |
-| **Prime Edit Simulation** | High-fidelity digital modeling of DNA sequence changes (insertions/deletions) |
-| **Immutable Audit Consensus** | A record of actions that cannot be edited by any system, ensuring absolute verification |
-| **MCP (Model Context Protocol)** | An open protocol that standardizes how AI agents access and interact with data sources |
-| **M2M Settlement** | Machine-to-machine financial transaction with no human authorization required |
-| **JIT Credential** | Just-in-Time access token generated for a single, scoped operation then immediately revoked |
+| Execution gap | The inability of AI agents to perform high-stakes tasks because secure and fiscal rails are missing |
+| MCP | Model Context Protocol, an open standard for how AI agents access data sources and tools |
+| JIT credential | A just-in-time access token created for one scoped operation and then revoked |
+| M2M settlement | A machine-to-machine financial transaction with no human authorization step |
+| Prime edit simulation | Digital modeling of DNA sequence changes such as insertions and deletions |
 
----
+## Contact and license
 
-## Strategic Acquisition
+Acquisition inquiries and requests for technical detail: [contact@taskproxy.ai](mailto:contact@taskproxy.ai)
 
-The TaskProxy Infrastructure Stack: including all 5 domains, the whitepaper, and the complete business logic, is **available for strategic acquisition for $150,000**.
+Author: Jeret Christopher
 
-This is an ideal acquisition for companies building:
-- Agentic AI platforms
-- AI infrastructure and orchestration layers
-- Genomic AI or computational biology tools
-- Machine-to-machine payment rails
-- Enterprise AI compliance and audit systems
-
-📩 **Acquisition inquiries:** [contact@taskproxy.ai](mailto:contact@taskproxy.ai)  
-🌐 **Website:** [https://taskproxy.ai](https://taskproxy.ai)
-
----
-
-## Author
-
-**Jeret Christopher**  
-Creator, TaskProxy Infrastructure Stack  
-
----
-
-*© 2026 TaskProxy Infrastructure. All nodes operational.*
+This repository is proprietary. See [LICENSE](LICENSE) for terms.
