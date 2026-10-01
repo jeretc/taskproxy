@@ -51,12 +51,14 @@ flowchart TD
     D -->|Transaction settled| E[M2M Ledger<br/>Immutable audit record]
 ```
 
-### Node responsibilities
+### Intended node responsibilities
 
-- **MCP Node:** Translates agent intent into scoped, least-privilege requests so that agents use curated endpoints rather than raw data access.
-- **Prime Editor:** An environment for modeling search-and-replace edits on digital DNA before any physical lab commitment.
-- **Autonomous Pay:** Real-time fiscal authorization so the stack can pay for compute such as API calls, GPU time and server spin-up.
-- **M2M Ledger:** An event record intended to give every handshake, simulation and payment a verifiable audit trail.
+These describe the proposed design of each node. Only the MCP Node demo layer (request logging and health checks) is implemented today.
+
+- **MCP Node:** Would translate agent intent into scoped, least-privilege requests so that agents use curated endpoints rather than raw data access.
+- **Prime Editor:** Would provide an environment for modeling search-and-replace edits on digital DNA before any physical lab commitment.
+- **Autonomous Pay:** Would provide real-time fiscal authorization so the stack can pay for compute such as API calls, GPU time and server spin-up.
+- **M2M Ledger:** Would record every handshake, simulation and payment as a verifiable audit event.
 
 ## Illustrative scenarios
 
@@ -64,10 +66,10 @@ These walkthroughs describe the intended design. They are not descriptions of cu
 
 **Scenario A: genetic search-and-replace (business view).** An organization states what it wants through MCP Node. Prime Editor performs the modeling. Autonomous Pay covers the compute cost. M2M Ledger issues a record of every step.
 
-**Scenario B: infrastructure compliance (technical view).**
+**Scenario B: infrastructure compliance (technical view).** This shows an alternative application of the same proposed compute layer: instead of a genomic simulation, the compute node runs a sandboxed software-patch validation. The pattern of scoped access, compute, settlement and audit is the same.
 
 1. MCP Node generates a just-in-time credential for a specific server directory.
-2. The Prime Editor sandbox validates a patch against a shadow clone of the production environment.
+2. The compute node's sandbox validates a patch against a shadow clone of the production environment.
 3. Autonomous Pay settles the cost of the ephemeral server time.
 4. M2M Ledger records the diff and transaction ID.
 
